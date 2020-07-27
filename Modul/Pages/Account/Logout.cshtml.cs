@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace Modul.Areas.Identity.Pages.Account
+namespace Modul.Pages.Account
 {
     [AllowAnonymous]
     public class LogoutModel : PageModel

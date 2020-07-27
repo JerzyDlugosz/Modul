@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Modul.Models;
 
 namespace Modul.Data
 {
@@ -12,5 +13,6 @@ namespace Modul.Data
             : base(options)
         {
         }
+        public DbSet<ZalozeniaDlaOferty> ZolozeniaDlaOferty { get; set; }
     }
 }

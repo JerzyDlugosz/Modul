@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modul.Models
 {
-    public class ZolozeniaDlaOferty
+    public class ZalozeniaDlaOferty
     {
         [Key]
         public int Id { get; set; }
