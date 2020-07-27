@@ -13,6 +13,8 @@ namespace Modul.Models
         [Required]
         public string PokazFormularz { get; set; }
         [Required]
+        public string CzyNaVat { get; set; }
+        [Required]
         public string CzyRolnik { get; set; }
         [Required]
         public int ProgPodatkowy { get; set; }

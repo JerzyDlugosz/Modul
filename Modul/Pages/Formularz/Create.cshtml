@@ -15,13 +15,24 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="ZalozeniaDlaOferty.PokazFormularz" class="control-label"></label>
-                <input asp-for="ZalozeniaDlaOferty.PokazFormularz" class="form-control" />
+                @*<input asp-for="ZalozeniaDlaOferty.PokazFormularz" class="form-control" />*@
                 <span asp-validation-for="ZalozeniaDlaOferty.PokazFormularz" class="text-danger"></span>
+                @Html.RadioButtonFor(m => m.ZalozeniaDlaOferty.PokazFormularz, "Tak") Tak
+                @Html.RadioButtonFor(m => m.ZalozeniaDlaOferty.PokazFormularz, "Nie") Nie
+            </div>
+            <div class="form-group">
+                <label asp-for="ZalozeniaDlaOferty.CzyNaVat" class="control-label"></label>
+                @*<input asp-for="ZalozeniaDlaOferty.CzyRolnik" class="form-control" />*@
+                <span asp-validation-for="ZalozeniaDlaOferty.CzyNaVat" class="text-danger"></span>
+                @Html.RadioButtonFor(m => m.ZalozeniaDlaOferty.CzyNaVat, "Tak") Tak
+                @Html.RadioButtonFor(m => m.ZalozeniaDlaOferty.CzyNaVat, "Nie") Nie
             </div>
             <div class="form-group">
                 <label asp-for="ZalozeniaDlaOferty.CzyRolnik" class="control-label"></label>
-                <input asp-for="ZalozeniaDlaOferty.CzyRolnik" class="form-control" />
+                @*<input asp-for="ZalozeniaDlaOferty.CzyRolnik" class="form-control" />*@
                 <span asp-validation-for="ZalozeniaDlaOferty.CzyRolnik" class="text-danger"></span>
+                @Html.RadioButtonFor(m => m.ZalozeniaDlaOferty.CzyRolnik, "Tak") Tak
+                @Html.RadioButtonFor(m => m.ZalozeniaDlaOferty.CzyRolnik, "Nie") Nie
             </div>
             <div class="form-group">
                 <label asp-for="ZalozeniaDlaOferty.ProgPodatkowy" class="control-label"></label>
@@ -30,7 +41,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="ZalozeniaDlaOferty.Wojewodztwo" class="control-label"></label>
-                <select asp-for="ZalozeniaDlaOferty.Wojewodztwo" class="form-control"></select>
+                <select asp-for="ZalozeniaDlaOferty.Wojewodztwo" asp-items="@Html.GetEnumSelectList<Models.Wojewodztwo>()" class="form-control"></select>
                 <span asp-validation-for="ZalozeniaDlaOferty.Wojewodztwo" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -40,8 +51,10 @@
             </div>
             <div class="form-group">
                 <label asp-for="ZalozeniaDlaOferty.ZnajomoscRocznychRachunkowiZuzywanaEnergia" class="control-label"></label>
-                <input asp-for="ZalozeniaDlaOferty.ZnajomoscRocznychRachunkowiZuzywanaEnergia" class="form-control" />
+                @*<input asp-for="ZalozeniaDlaOferty.ZnajomoscRocznychRachunkowiZuzywanaEnergia" class="form-control" />*@
                 <span asp-validation-for="ZalozeniaDlaOferty.ZnajomoscRocznychRachunkowiZuzywanaEnergia" class="text-danger"></span>
+                @Html.RadioButtonFor(m => m.ZalozeniaDlaOferty.ZnajomoscRocznychRachunkowiZuzywanaEnergia, "Tak") Tak
+                @Html.RadioButtonFor(m => m.ZalozeniaDlaOferty.ZnajomoscRocznychRachunkowiZuzywanaEnergia, "Nie") Nie
             </div>
             <div class="form-group">
                 <label asp-for="ZalozeniaDlaOferty.ImieiNazwiskoKlienta" class="control-label"></label>
@@ -50,13 +63,17 @@
             </div>
             <div class="form-group">
                 <label asp-for="ZalozeniaDlaOferty.Paneltechniczny" class="control-label"></label>
-                <input asp-for="ZalozeniaDlaOferty.Paneltechniczny" class="form-control" />
+                @*<input asp-for="ZalozeniaDlaOferty.Paneltechniczny" class="form-control" />*@
                 <span asp-validation-for="ZalozeniaDlaOferty.Paneltechniczny" class="text-danger"></span>
+                @Html.RadioButtonFor(m => m.ZalozeniaDlaOferty.Paneltechniczny, "Tak") Tak
+                @Html.RadioButtonFor(m => m.ZalozeniaDlaOferty.Paneltechniczny, "Nie") Nie
             </div>
             <div class="form-group">
                 <label asp-for="ZalozeniaDlaOferty.WycenaNaZyczenie" class="control-label"></label>
-                <input asp-for="ZalozeniaDlaOferty.WycenaNaZyczenie" class="form-control" />
+                @*<input asp-for="ZalozeniaDlaOferty.WycenaNaZyczenie" class="form-control" />*@
                 <span asp-validation-for="ZalozeniaDlaOferty.WycenaNaZyczenie" class="text-danger"></span>
+                @Html.RadioButtonFor(m => m.ZalozeniaDlaOferty.WycenaNaZyczenie, "Tak") Tak
+                @Html.RadioButtonFor(m => m.ZalozeniaDlaOferty.WycenaNaZyczenie, "Nie") Nie
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
