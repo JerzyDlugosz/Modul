@@ -14,5 +14,7 @@ namespace Modul.Data
         {
         }
         public DbSet<ZalozeniaDlaOferty> ZolozeniaDlaOferty { get; set; }
+        public DbSet<Oferta> Ofertas { get; set; }
+        public DbSet<WycenaWarunkow> WycenaWarunkows { get; set; }
     }
 }
