@@ -52,7 +52,7 @@ namespace Modul.Pages
             {
                 return RedirectToPage("Formularz/Index");
             }
-            return Page();
+            return RedirectToPage("Account/Login");
         }
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)

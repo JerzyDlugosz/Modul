@@ -5,18 +5,23 @@
 }
 
 <h1>@ViewData["Title"]</h1>
-@{
-    if (@Model.DisplayConfirmAccountLink)
-    {
-<p>
-    This app does not currently have a real email sender registered, see <a href="https://aka.ms/aspaccountconf">these docs</a> for how to configure a real email sender.
-    Normally this would be emailed: <a id="confirm-link" href="@Model.EmailConfirmationUrl">Click here to confirm your account</a>
-</p>
-    }
-    else
-    {
-<p>
-        Please check your email to confirm your account.
-</p>
-    }
-}
+
+<div class="container">
+    <main role="main" class="pb-3">
+        <div class=" box-shadow">
+            <div class="container  bg-gray">
+                <div class="justify-content-center">
+                    <div class=" text-center">
+                        <form asp-route-returnUrl="" method="post">
+                            <div class="form-group">
+                                <div>Wprowadz otrzymane hasło</div>
+                                <input />
+                            </div>
+                            <button type="submit" class="btn btn-primary">Logowanie</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

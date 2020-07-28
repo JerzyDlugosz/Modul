@@ -22,9 +22,11 @@ namespace Modul.Pages.Account
             _logger = logger;
         }
 
-        public void OnGet()
+        public IActionResult OnGet()
         {
+            return RedirectToPage("Account/Login");
         }
+
 
         public async Task<IActionResult> OnPost(string returnUrl = null)
         {
